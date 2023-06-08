@@ -20,7 +20,10 @@ function Counter(props: CounterProps) {
       >
         {props.title}
       </h1>
-      <button onClick={up}>+</button> 👉 {count}
+      <button className="btn" onClick={up}>
+        +
+      </button>{" "}
+      👉 {count}
     </>
   );
 }
