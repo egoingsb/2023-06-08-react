@@ -2,12 +2,11 @@ import React from "react";
 import "./App.css";
 
 // @ts-ignore
-function Counter(props) {
-  console.log("🚀 ~ file: App.tsx:6 ~ Counter ~ props:", props);
+function Counter({ title, initValue }) {
   return (
     <>
-      <h1>{props.title}</h1>
-      <button>+</button> 👉 {props.initValue}
+      <h1>{title}</h1>
+      <button>+</button> 👉 {initValue}
     </>
   );
 }
