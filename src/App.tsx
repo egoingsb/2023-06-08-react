@@ -12,7 +12,14 @@ function Counter(props: CounterProps) {
   }
   return (
     <>
-      <h1>{props.title}</h1>
+      <h1
+        style={{
+          color: "red",
+          backgroundColor: "yellow",
+        }}
+      >
+        {props.title}
+      </h1>
       <button onClick={up}>+</button> 👉 {count}
     </>
   );
