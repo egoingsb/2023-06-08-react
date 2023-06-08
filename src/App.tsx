@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import countStyle from "./App.module.css";
 import "./App.css";
+console.log("🚀 ~ file: App.tsx:3 ~ countStyle:", countStyle);
 type CounterProps = {
   title: string;
   initValue: number;
@@ -11,7 +13,7 @@ function Counter(props: CounterProps) {
     setCount((oldCount) => oldCount + 1);
   }
   return (
-    <>
+    <div className={countStyle.layout}>
       <h1
         style={{
           color: "red",
@@ -24,7 +26,7 @@ function Counter(props: CounterProps) {
         +
       </button>{" "}
       👉 {count}
-    </>
+    </div>
   );
 }
 
