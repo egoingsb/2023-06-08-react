@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import "./App.css";
 type CounterProps = {
   title: string;
-  initValue?: number;
+  initValue: number;
 };
 function Counter(props: CounterProps) {
-  const [count, setCount] = useState(50);
+  const [count, setCount] = useState(props.initValue);
   function up() {
     // setCount(count+1);
     setCount((oldCount) => oldCount + 1);
