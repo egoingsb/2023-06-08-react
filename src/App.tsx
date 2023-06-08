@@ -7,9 +7,8 @@ type CounterProps = {
 function Counter(props: CounterProps) {
   const [count, setCount] = useState(50);
   function up() {
-    console.log("up");
-    // count = count + 1;
-    setCount(count + 1);
+    // setCount(count+1);
+    setCount((oldCount) => oldCount + 1);
   }
   return (
     <>
